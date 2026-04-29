@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
@@ -35,13 +36,15 @@ export function Navigation() {
       )}
     >
       <nav className="container mx-auto px-6 flex items-center justify-between">
-        <a href="#" className="flex flex-col">
-          <span className="font-serif text-xl md:text-2xl font-semibold text-navy tracking-tight">
-            Freedom
-          </span>
-          <span className="text-[10px] md:text-xs text-teal uppercase tracking-[0.2em] -mt-1">
-            Inner Wellbeing
-          </span>
+        <a href="#" className="flex items-center">
+          <Image
+            src="/images/logo.png"
+            alt="Freedom Inner Wellbeing"
+            width={160}
+            height={60}
+            className="h-12 md:h-14 w-auto"
+            priority
+          />
         </a>
 
         {/* Desktop Navigation */}

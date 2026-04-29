@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Instagram, Linkedin, Mail, Phone } from "lucide-react";
+import Image from "next/image";
 
 const footerLinks = {
   quickLinks: [
@@ -31,12 +32,13 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="mb-6">
-              <span className="font-serif text-2xl font-semibold text-ivory">
-                Freedom
-              </span>
-              <span className="block text-xs text-teal uppercase tracking-[0.2em] -mt-1">
-                Inner Wellbeing
-              </span>
+              <Image
+                src="/images/logo.png"
+                alt="Freedom Inner Wellbeing"
+                width={180}
+                height={68}
+                className="h-16 w-auto brightness-0 invert"
+              />
             </div>
             <p className="text-ivory/60 text-sm leading-relaxed max-w-md mb-6">
               Helping working professionals overcome anxiety, overthinking, and
