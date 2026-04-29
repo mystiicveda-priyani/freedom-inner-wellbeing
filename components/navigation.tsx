@@ -37,14 +37,16 @@ export function Navigation() {
     >
       <nav className="container mx-auto px-6 flex items-center justify-between">
         <a href="#" className="flex items-center">
-          <Image
-            src="/images/logo.png"
-            alt="Freedom Inner Wellbeing"
-            width={160}
-            height={60}
-            className="h-12 md:h-14 w-auto"
-            priority
-          />
+          <div className="bg-ivory rounded-xl p-2 shadow-sm border border-border/30">
+            <Image
+              src="/images/logo.png"
+              alt="Freedom Inner Wellbeing"
+              width={140}
+              height={52}
+              className="h-10 md:h-11 w-auto"
+              priority
+            />
+          </div>
         </a>
 
         {/* Desktop Navigation */}
