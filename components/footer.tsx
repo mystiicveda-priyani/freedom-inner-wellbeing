@@ -31,13 +31,13 @@ export function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <div className="mb-6 bg-white/95 rounded-xl p-3 w-fit">
+            <div className="mb-6 bg-beige/90 rounded-2xl px-5 py-4 w-fit shadow-lg shadow-black/10">
               <Image
                 src="/images/logo.png"
                 alt="Freedom Inner Wellbeing"
                 width={180}
                 height={68}
-                className="h-14 w-auto"
+                className="h-12 w-auto"
               />
             </div>
             <p className="text-ivory/60 text-sm leading-relaxed max-w-md mb-6">
