@@ -46,15 +46,15 @@ export function About() {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8 }}
           >
-            <span className="text-sm font-medium text-teal tracking-widest uppercase mb-4 block">
+            <span className="text-sm font-medium text-gold tracking-widest uppercase mb-4 block">
               About Omkar
             </span>
 
-            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-navy mb-6 leading-tight">
+            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-emerald mb-6 leading-tight">
               Where Psychology Meets Inner Awareness
             </h2>
 
-            <div className="space-y-5 text-navy/70 leading-relaxed">
+            <div className="space-y-5 text-emerald/70 leading-relaxed">
               <p>
                 I&apos;m Omkar Pawar — a Psychologist, Emotional Healing Coach, and
                 the founder of Freedom Inner Wellbeing. I work with working
@@ -81,10 +81,10 @@ export function About() {
               href="#services"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="inline-flex items-center gap-2 mt-8 text-navy font-medium border-b-2 border-teal pb-1 hover:text-teal transition-colors"
+              className="inline-flex items-center gap-2 mt-8 text-emerald font-medium border-b-2 border-teal pb-1 hover:text-gold transition-colors"
             >
               Learn about my approach
-              <span className="text-teal">→</span>
+              <span className="text-gold">→</span>
             </motion.a>
           </motion.div>
 
@@ -104,12 +104,12 @@ export function About() {
                 className="bg-card p-6 rounded-2xl border border-border/30 shadow-sm hover:shadow-md transition-shadow duration-300"
               >
                 <div className="w-12 h-12 rounded-xl bg-teal/10 flex items-center justify-center mb-4">
-                  <feature.icon className="w-6 h-6 text-teal" />
+                  <feature.icon className="w-6 h-6 text-gold" />
                 </div>
-                <h3 className="font-serif text-lg text-navy mb-2">
+                <h3 className="font-serif text-lg text-emerald mb-2">
                   {feature.title}
                 </h3>
-                <p className="text-sm text-navy/60 leading-relaxed">
+                <p className="text-sm text-emerald/60 leading-relaxed">
                   {feature.description}
                 </p>
               </motion.div>

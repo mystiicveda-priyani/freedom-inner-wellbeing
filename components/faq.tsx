@@ -52,7 +52,7 @@ export function FAQ() {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6 }}
-              className="text-sm font-medium text-teal tracking-widest uppercase mb-4 block"
+              className="text-sm font-medium text-gold tracking-widest uppercase mb-4 block"
             >
               FAQ
             </motion.span>
@@ -61,7 +61,7 @@ export function FAQ() {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="font-serif text-3xl md:text-4xl lg:text-5xl text-navy mb-6"
+              className="font-serif text-3xl md:text-4xl lg:text-5xl text-emerald mb-6"
             >
               Common Questions
             </motion.h2>
@@ -70,7 +70,7 @@ export function FAQ() {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-navy/70 text-lg"
+              className="text-emerald/70 text-lg"
             >
               Find answers to frequently asked questions about the healing
               process.
@@ -92,14 +92,14 @@ export function FAQ() {
                   }
                   className="w-full flex items-center justify-between p-6 text-left hover:bg-beige/30 transition-colors"
                 >
-                  <span className="font-medium text-navy pr-8">
+                  <span className="font-medium text-emerald pr-8">
                     {faq.question}
                   </span>
                   <span className="flex-shrink-0 w-8 h-8 rounded-full bg-teal/10 flex items-center justify-center">
                     {openIndex === index ? (
-                      <Minus className="w-4 h-4 text-teal" />
+                      <Minus className="w-4 h-4 text-gold" />
                     ) : (
-                      <Plus className="w-4 h-4 text-teal" />
+                      <Plus className="w-4 h-4 text-gold" />
                     )}
                   </span>
                 </button>
@@ -111,7 +111,7 @@ export function FAQ() {
                     transition={{ duration: 0.3 }}
                     className="px-6 pb-6"
                   >
-                    <p className="text-navy/70 leading-relaxed">{faq.answer}</p>
+                    <p className="text-emerald/70 leading-relaxed">{faq.answer}</p>
                   </motion.div>
                 )}
               </motion.div>

@@ -71,7 +71,7 @@ export function Testimonials() {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6 }}
-            className="text-sm font-medium text-teal tracking-widest uppercase mb-4 block"
+            className="text-sm font-medium text-gold tracking-widest uppercase mb-4 block"
           >
             Transformations
           </motion.span>
@@ -80,7 +80,7 @@ export function Testimonials() {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="font-serif text-3xl md:text-4xl lg:text-5xl text-navy mb-6"
+            className="font-serif text-3xl md:text-4xl lg:text-5xl text-emerald mb-6"
           >
             Real Stories, Real Change
           </motion.h2>
@@ -89,7 +89,7 @@ export function Testimonials() {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-navy/70 text-lg"
+            className="text-emerald/70 text-lg"
           >
             Hear from professionals who have walked this path and found their
             way to emotional freedom.
@@ -104,26 +104,26 @@ export function Testimonials() {
           className="max-w-4xl mx-auto"
         >
           <div className="relative bg-card rounded-3xl p-8 md:p-12 border border-border/30 shadow-lg">
-            <Quote className="absolute top-8 left-8 w-12 h-12 text-teal/20" />
+            <Quote className="absolute top-8 left-8 w-12 h-12 text-gold/20" />
 
             <div className="relative z-10">
               <div className="grid md:grid-cols-2 gap-8 mb-8">
                 {/* Before */}
-                <div className="bg-navy/5 rounded-2xl p-6">
-                  <span className="text-xs font-semibold text-navy/40 uppercase tracking-widest mb-3 block">
+                <div className="bg-emerald/5 rounded-2xl p-6">
+                  <span className="text-xs font-semibold text-emerald/40 uppercase tracking-widest mb-3 block">
                     Before
                   </span>
-                  <p className="text-navy/70 text-sm leading-relaxed italic">
+                  <p className="text-emerald/70 text-sm leading-relaxed italic">
                     &ldquo;{testimonials[currentIndex].before}&rdquo;
                   </p>
                 </div>
 
                 {/* After */}
                 <div className="bg-teal/10 rounded-2xl p-6">
-                  <span className="text-xs font-semibold text-teal uppercase tracking-widest mb-3 block">
+                  <span className="text-xs font-semibold text-gold uppercase tracking-widest mb-3 block">
                     After
                   </span>
-                  <p className="text-navy/80 text-sm leading-relaxed italic">
+                  <p className="text-emerald/80 text-sm leading-relaxed italic">
                     &ldquo;{testimonials[currentIndex].after}&rdquo;
                   </p>
                 </div>
@@ -132,13 +132,13 @@ export function Testimonials() {
               {/* Author */}
               <div className="flex items-center justify-between border-t border-border/50 pt-6">
                 <div>
-                  <h4 className="font-serif text-lg text-navy">
+                  <h4 className="font-serif text-lg text-emerald">
                     {testimonials[currentIndex].name}
                   </h4>
-                  <p className="text-navy/60 text-sm">
+                  <p className="text-emerald/60 text-sm">
                     {testimonials[currentIndex].role}
                   </p>
-                  <p className="text-teal text-xs mt-1">
+                  <p className="text-gold text-xs mt-1">
                     {testimonials[currentIndex].duration}
                   </p>
                 </div>
@@ -147,14 +147,14 @@ export function Testimonials() {
                 <div className="flex items-center gap-2">
                   <button
                     onClick={prev}
-                    className="w-10 h-10 rounded-full border border-border hover:border-navy hover:bg-navy hover:text-ivory flex items-center justify-center transition-all duration-300"
+                    className="w-10 h-10 rounded-full border border-border hover:border-navy hover:bg-emerald hover:text-ivory flex items-center justify-center transition-all duration-300"
                     aria-label="Previous testimonial"
                   >
                     <ChevronLeft className="w-5 h-5" />
                   </button>
                   <button
                     onClick={next}
-                    className="w-10 h-10 rounded-full border border-border hover:border-navy hover:bg-navy hover:text-ivory flex items-center justify-center transition-all duration-300"
+                    className="w-10 h-10 rounded-full border border-border hover:border-navy hover:bg-emerald hover:text-ivory flex items-center justify-center transition-all duration-300"
                     aria-label="Next testimonial"
                   >
                     <ChevronRight className="w-5 h-5" />
@@ -171,7 +171,7 @@ export function Testimonials() {
                 key={index}
                 onClick={() => setCurrentIndex(index)}
                 className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                  index === currentIndex ? "bg-navy w-6" : "bg-navy/20"
+                  index === currentIndex ? "bg-emerald w-6" : "bg-emerald/20"
                 }`}
                 aria-label={`Go to testimonial ${index + 1}`}
               />

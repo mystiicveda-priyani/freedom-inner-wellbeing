@@ -71,7 +71,7 @@ export function Services() {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6 }}
-            className="text-sm font-medium text-teal tracking-widest uppercase mb-4 block"
+            className="text-sm font-medium text-gold tracking-widest uppercase mb-4 block"
           >
             Services
           </motion.span>
@@ -80,7 +80,7 @@ export function Services() {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="font-serif text-3xl md:text-4xl lg:text-5xl text-navy mb-6"
+            className="font-serif text-3xl md:text-4xl lg:text-5xl text-emerald mb-6"
           >
             Your Path to Emotional Freedom
           </motion.h2>
@@ -89,7 +89,7 @@ export function Services() {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-navy/70 text-lg"
+            className="text-emerald/70 text-lg"
           >
             Choose the right level of support for your healing journey. Every
             path leads to the same destination — lasting inner peace.
@@ -105,7 +105,7 @@ export function Services() {
               transition={{ duration: 0.6, delay: 0.3 + index * 0.1 }}
               className={`relative rounded-3xl p-8 flex flex-col ${
                 service.featured
-                  ? "bg-navy text-ivory lg:scale-105 shadow-2xl shadow-navy/20"
+                  ? "bg-emerald text-ivory lg:scale-105 shadow-2xl shadow-navy/20"
                   : "bg-card border border-border/30"
               }`}
             >
@@ -122,14 +122,14 @@ export function Services() {
               >
                 <service.icon
                   className={`w-7 h-7 ${
-                    service.featured ? "text-teal" : "text-teal"
+                    service.featured ? "text-gold" : "text-gold"
                   }`}
                 />
               </div>
 
               <span
                 className={`text-xs font-medium tracking-widest uppercase mb-2 ${
-                  service.featured ? "text-teal" : "text-teal"
+                  service.featured ? "text-gold" : "text-gold"
                 }`}
               >
                 {service.subtitle}
@@ -137,7 +137,7 @@ export function Services() {
 
               <h3
                 className={`font-serif text-2xl mb-4 ${
-                  service.featured ? "text-ivory" : "text-navy"
+                  service.featured ? "text-ivory" : "text-emerald"
                 }`}
               >
                 {service.title}
@@ -145,7 +145,7 @@ export function Services() {
 
               <p
                 className={`mb-6 text-sm leading-relaxed ${
-                  service.featured ? "text-ivory/70" : "text-navy/60"
+                  service.featured ? "text-ivory/70" : "text-emerald/60"
                 }`}
               >
                 {service.description}
@@ -156,7 +156,7 @@ export function Services() {
                   <li
                     key={i}
                     className={`flex items-center gap-3 text-sm ${
-                      service.featured ? "text-ivory/80" : "text-navy/70"
+                      service.featured ? "text-ivory/80" : "text-emerald/70"
                     }`}
                   >
                     <span
@@ -177,8 +177,8 @@ export function Services() {
                 whileTap={{ scale: 0.98 }}
                 className={`inline-flex items-center justify-center gap-2 py-4 rounded-full font-medium text-sm transition-all duration-300 ${
                   service.featured
-                    ? "bg-ivory text-navy hover:bg-ivory/90"
-                    : "bg-navy text-ivory hover:bg-navy-light"
+                    ? "bg-ivory text-emerald hover:bg-ivory/90"
+                    : "bg-emerald text-ivory hover:bg-emerald-light"
                 }`}
               >
                 {service.cta}

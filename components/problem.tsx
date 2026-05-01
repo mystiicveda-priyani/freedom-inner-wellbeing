@@ -19,7 +19,7 @@ export function Problem() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section className="py-24 lg:py-32 bg-navy relative overflow-hidden" ref={ref}>
+    <section className="py-24 lg:py-32 bg-emerald relative overflow-hidden" ref={ref}>
       {/* Subtle Background Elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 right-0 w-96 h-96 bg-teal rounded-full blur-3xl" />
@@ -32,7 +32,7 @@ export function Problem() {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6 }}
-            className="text-sm font-medium text-teal tracking-widest uppercase mb-4 block"
+            className="text-sm font-medium text-gold tracking-widest uppercase mb-4 block"
           >
             You&apos;re Not Alone
           </motion.span>
@@ -66,7 +66,7 @@ export function Problem() {
                 className="flex items-start gap-4 bg-ivory/5 backdrop-blur-sm rounded-xl p-5 text-left border border-ivory/10"
               >
                 <div className="flex-shrink-0 w-6 h-6 rounded-full bg-teal/20 flex items-center justify-center mt-0.5">
-                  <Check className="w-3.5 h-3.5 text-teal" />
+                  <Check className="w-3.5 h-3.5 text-gold" />
                 </div>
                 <span className="text-ivory/90 text-sm md:text-base leading-relaxed">
                   {problem}

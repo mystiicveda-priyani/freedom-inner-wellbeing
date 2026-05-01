@@ -10,7 +10,7 @@ export function CTA() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="contact" className="py-24 lg:py-32 bg-navy relative overflow-hidden" ref={ref}>
+    <section id="contact" className="py-24 lg:py-32 bg-emerald relative overflow-hidden" ref={ref}>
       {/* Background Elements */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-teal rounded-full blur-3xl" />
@@ -23,7 +23,7 @@ export function CTA() {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6 }}
-            className="text-sm font-medium text-teal tracking-widest uppercase mb-4 block"
+            className="text-sm font-medium text-gold tracking-widest uppercase mb-4 block"
           >
             Take the First Step
           </motion.span>
