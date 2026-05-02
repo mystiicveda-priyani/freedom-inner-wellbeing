@@ -1,0 +1,75 @@
+<svg viewBox="0 0 280 360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .logo-gold { fill: none; stroke: #C9A35A; }
+      .logo-emerald { fill: #1B4C45; }
+      .logo-sage { fill: #8DA27E; }
+      .logo-text-emerald { fill: #1B4C45; font-family: 'Cormorant Garamond', serif; font-weight: 600; letter-spacing: 3px; }
+      .logo-text-gold { fill: #C9A35A; font-family: 'Cormorant Garamond', serif; font-weight: 400; letter-spacing: 2px; }
+    </style>
+  </defs>
+
+  <!-- Outer curved line (top left) -->
+  <path d="M 80 40 Q 50 50 50 90" class="logo-gold" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Radiating lines -->
+  <g class="logo-gold" stroke-width="1.5" opacity="0.8">
+    <line x1="140" y1="20" x2="140" y2="40"/>
+    <line x1="165" y1="30" x2="150" y2="48"/>
+    <line x1="185" y1="50" x2="165" y2="65"/>
+    <line x1="200" y1="75" x2="175" y2="80"/>
+    <line x1="185" y1="100" x2="165" y2="95"/>
+    <line x1="165" y1="120" x2="150" y2="112"/>
+    <line x1="140" y1="130" x2="140" y2="110"/>
+    <line x1="115" y1="120" x2="130" y2="112"/>
+    <line x1="95" y1="100" x2="115" y2="95"/>
+    <line x1="80" y1="75" x2="105" y2="80"/>
+    <line x1="95" y1="50" x2="115" y2="65"/>
+    <line x1="115" y1="30" x2="130" y2="48"/>
+  </g>
+
+  <!-- Center dot (top) -->
+  <circle cx="140" cy="75" r="4" class="logo-emerald"/>
+
+  <!-- Main figure body -->
+  <g>
+    <!-- Body -->
+    <ellipse cx="140" cy="110" rx="8" ry="30" class="logo-emerald"/>
+    
+    <!-- Head -->
+    <circle cx="140" cy="75" r="12" class="logo-emerald"/>
+    
+    <!-- Left arm raised -->
+    <path d="M 132 100 Q 110 85 95 95" class="logo-emerald" stroke-width="14" stroke-linecap="round" fill="none"/>
+    
+    <!-- Right arm raised -->
+    <path d="M 148 100 Q 170 85 185 95" class="logo-emerald" stroke-width="14" stroke-linecap="round" fill="none"/>
+    
+    <!-- Left leaf -->
+    <ellipse cx="105" cy="135" rx="15" ry="28" class="logo-sage" opacity="0.85" transform="rotate(-40 105 135)"/>
+    
+    <!-- Right leaf -->
+    <ellipse cx="175" cy="135" rx="15" ry="28" class="logo-sage" opacity="0.85" transform="rotate(40 175 135)"/>
+  </g>
+
+  <!-- Outer circle (partial) -->
+  <circle cx="140" cy="100" r="80" fill="none" class="logo-gold" stroke-width="2" opacity="0.3"/>
+
+  <!-- Text: FREEDOM -->
+  <text x="140" y="220" font-size="36" text-anchor="middle" class="logo-text-emerald">FREEDOM</text>
+  
+  <!-- Decorative line left -->
+  <line x1="70" y1="245" x2="115" y2="245" class="logo-gold" stroke-width="2"/>
+  
+  <!-- Dot left -->
+  <circle cx="122" cy="245" r="2" class="logo-gold"/>
+  
+  <!-- Text: INNER WELL-BEING -->
+  <text x="140" y="260" font-size="14" text-anchor="middle" class="logo-text-gold" letter-spacing="1">INNER WELL-BEING</text>
+  
+  <!-- Dot right -->
+  <circle cx="158" cy="245" r="2" class="logo-gold"/>
+  
+  <!-- Decorative line right -->
+  <line x1="165" y1="245" x2="210" y2="245" class="logo-gold" stroke-width="2"/>
+</svg>
