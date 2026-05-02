@@ -6,6 +6,7 @@ import Card from "@/components/ui/Card";
 import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { SERVICES, EXTERNAL_LINKS } from "@/lib/constants";
+import ICONS from "@/components/icons";
 
 export default function ServicesPreview() {
   return (
@@ -74,7 +75,10 @@ export default function ServicesPreview() {
                 </Card>
               ) : (
                 <Card className="p-8 h-full">
-                  <div className="text-4xl mb-4">{service.icon}</div>
+                  <div className="text-4xl mb-4">{(() => {
+                    const Icon = ICONS[service.iconKey as string];
+                    return Icon ? <Icon className="w-10 h-10" /> : null;
+                  })()}</div>
                   <h3 className="text-xl font-playfair font-semibold text-primary mb-3">
                     {service.title}
                   </h3>

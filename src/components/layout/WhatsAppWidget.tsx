@@ -3,7 +3,6 @@
 import React from "react";
 
 export default function WhatsAppWidget() {
-  const phone = "+917020455546";
   const message = encodeURIComponent(
     "Hi Omkar, I'm interested in your programs and would like to learn more."
   );

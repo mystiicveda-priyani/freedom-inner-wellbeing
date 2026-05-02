@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
 import Container from "@/components/ui/Container";
-import SectionHeading from "@/components/ui/SectionHeading";
 import { COMMUNITY_STATS, EXTERNAL_LINKS } from "@/lib/constants";
 
 export default function CommunitySection() {

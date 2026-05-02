@@ -124,7 +124,7 @@ Edit `src/lib/constants.ts`:
 export const BRAND = {
   name: "Freedom Inner Wellbeing",
   tagline: "Where Psychology Meets Inner Awareness",
-  email: "hello@freedominnerwellbeing.com",
+  email: "Freedominnerwellbeing@gmail.com",
 };
 
 export const SERVICES = [
@@ -219,7 +219,7 @@ The website is ready to integrate with:
 - Easy to update in `src/lib/constants.ts`
 
 ### Email
-- Contact form email: `hello@freedominnerwellbeing.com`
+- Contact form email: `Freedominnerwellbeing@gmail.com`
 - Easy to update in constants
 
 ### Social Media

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { BRAND, NAV_LINKS, SOCIAL_LINKS, EXTERNAL_LINKS } from "@/lib/constants";
 import Container from "@/components/ui/Container";
+import { IconInstagram, IconLinkedIn, IconGoogle, IconWhatsApp } from "./SocialIcons";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -30,18 +31,27 @@ export default function Footer() {
             </p>
             {/* Social */}
             <div className="flex gap-2 mt-4">
-              {SOCIAL_LINKS.map((social, i) => (
+              {SOCIAL_LINKS.map((s, i) => {
+                let Icon = null;
+                if (s.label.toLowerCase().includes("instagram")) Icon = IconInstagram;
+                if (s.label.toLowerCase().includes("linkedin")) Icon = IconLinkedIn;
+                if (s.label.toLowerCase().includes("google")) Icon = IconGoogle;
+                if (s.label.toLowerCase().includes("whatsapp")) Icon = IconWhatsApp;
+
+                return (
                   <a
-                    key={`${social.href}-${social.label}-${i}`}
-                    href={social.href}
+                    key={i}
+                    href={s.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label={social.label}
-                    className="w-9 h-9 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-xs font-bold text-white/50 hover:bg-gold hover:text-primary hover:border-gold transition-all duration-300"
+                    aria-label={s.label}
+                    className="text-gray-600 hover:text-gray-900 inline-flex items-center gap-2"
                   >
-                    {social.icon}
+                    {Icon ? <Icon className="w-5 h-5" /> : null}
+                    <span>{s.label}</span>
                   </a>
-                ))}
+                );
+              })}
             </div>
           </div>
 
@@ -118,7 +128,7 @@ export default function Footer() {
               <li>
                 <a
                   href={`mailto:${BRAND.email}`}
-                  className="text-sm text-white/50 hover:text-gold transition-colors"
+                  className="text-sm text-white/50 hover:text-gold transition-colors break-all"
                 >
                   Email Omkar
                 </a>
