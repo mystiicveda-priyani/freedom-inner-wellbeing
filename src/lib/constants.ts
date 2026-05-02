@@ -6,6 +6,7 @@ export const BRAND = {
     "Premium emotional healing for professionals seeking structured transformation from anxiety, overthinking, and emotional overwhelm.",
   founder: "Omkar Pawar",
   email: "Freedominnerwellbeing@gmail.com",
+  secondaryEmail: "Info.freedominnerwellbeing@gmail.com",
   phone: "+91 70204 55546",
 };
 
@@ -86,7 +87,7 @@ export const PROBLEMS = [
 ];
 
 export const COMMUNITY_STATS = [
-  { number: "50+", label: "Professionals Helped" },
+  { number: "300+", label: "Professionals Helped" },
   { number: "8", label: "Week Program", suffix: "wk" },
   { number: "4.9", label: "Average Rating", suffix: "★" },
   { number: "1:1", label: "Personalised Sessions" },
@@ -100,7 +101,9 @@ export const SOCIAL_LINKS = [
 ];
 
 export const EXTERNAL_LINKS = {
-  topmate: "https://topmate.io",
+  topmate: "https://topmate.io/lifecoachomkar/",
+  topmateClarity: "https://topmate.io/lifecoachomkar/1967798",
+  joinCircle: "https://chat.whatsapp.com/GRsMd1aOhm1KUtrSb7clsx",
 };
 
 export const PROCESS_STEPS = [

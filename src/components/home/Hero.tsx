@@ -91,6 +91,7 @@ export default function Hero() {
               <span className="mt-4 text-lg font-inter font-semibold text-primary transition-colors duration-200 group-hover:text-gold">
                 Omkar Pawar
               </span>
+              <span className="text-sm text-charcoal-soft mt-1">Founder of Freedom Inner Wellbeing</span>
             </Link>
           </motion.div>
         </motion.div>

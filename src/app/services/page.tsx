@@ -64,7 +64,7 @@ export default function Services() {
                   variant="primary"
                   size="lg"
                   asLink
-                  href={EXTERNAL_LINKS.topmate}
+                  href={EXTERNAL_LINKS.topmateClarity}
                   target="_blank"
                 >
                   Apply for Program ↗
@@ -89,7 +89,7 @@ export default function Services() {
                   variant="primary"
                   size="lg"
                   asLink
-                  href={EXTERNAL_LINKS.topmate}
+                  href={EXTERNAL_LINKS.topmateClarity}
                   target="_blank"
                 >
                   Book via Topmate →
