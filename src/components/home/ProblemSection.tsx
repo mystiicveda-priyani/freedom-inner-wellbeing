@@ -5,7 +5,6 @@ import Container from "@/components/ui/Container";
 import Card from "@/components/ui/Card";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { PROBLEMS } from "@/lib/constants";
-import ICONS from "@/components/icons";
 
 export default function ProblemSection() {
   const containerVariants = {
