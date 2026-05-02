@@ -36,7 +36,7 @@ export default function CommunitySection() {
 
             <ul className="space-y-3">
               {[
-                "Weekly live sessions with Omkar",
+                "Weekly live sessions",
                 "Guided emotional healing practices",
                 "Anxiety management tools & resources",
                 "Inner awareness exercises & reflections",
@@ -54,7 +54,7 @@ export default function CommunitySection() {
                 variant="primary"
                 size="lg"
                 asLink
-                href={EXTERNAL_LINKS.topmate}
+                href={EXTERNAL_LINKS.joinCircle}
                 target="_blank"
               >
                 Join the Circle ↗
