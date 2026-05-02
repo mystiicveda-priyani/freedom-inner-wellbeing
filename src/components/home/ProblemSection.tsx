@@ -51,12 +51,7 @@ export default function ProblemSection() {
           {PROBLEMS.map((problem, idx) => (
             <motion.div key={idx} variants={itemVariants}>
               <Card className="p-8 h-full">
-                <div className="text-4xl mb-4">
-                  {(() => {
-                    const Icon = ICONS[problem.iconKey as string];
-                    return Icon ? <Icon className="w-10 h-10" /> : null;
-                  })()}
-                </div>
+              
                 <h4 className="text-xl font-playfair font-semibold text-primary mb-3">
                   {problem.title}
                 </h4>
